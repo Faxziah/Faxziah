@@ -1,0 +1,140 @@
+html {
+	margin: 0; 
+	padding: 0;
+}
+
+body {
+	font-family: 'OpenSans',Arial,Helvetica,sans-serif;
+	max-width: 1000px;
+	margin: auto;
+	background-color: white;
+}
+
+@media (max-width: 1100px) {
+    body {
+        margin: 30px;
+    }
+}
+
+a {
+	color: black;
+	text-decoration: none;
+}
+
+header {
+	height: 70px;
+	display: flex;
+	align-items: center;
+	margin-top: 50px;
+	box-shadow: 0px 30px 30px -15px black;
+	width: 100%;
+    position: relative;
+    min-width: 200px;
+	background-color: rgb(238,238,238, 0.3);
+}
+
+.logo {
+	display: flex;
+	align-items: center;
+	width: 100%;
+	  
+}
+
+.logo a {
+    height: 70px;
+    display: flex;
+	align-items: center;
+	flex-direction: column;
+	justify-content: center;
+}
+
+@media (max-width: 600px) {
+.logo img {
+	height: 70px;
+	width: 80px;
+	border-radius: 10px;
+}
+}
+
+@media (min-width: 600px) {
+.logo img {
+	height: 70px;
+	width: 80px;
+	border-radius: 10px;
+}
+}
+
+div.me {
+	width: 250px;
+	height: 70px;
+	margin-left: 15px;
+
+}
+
+div.me a {
+	display: flex;
+	align-items:center;
+	font-size: 1.1em;
+	height: 70px;
+	text-align: center;
+	font-weight: bold;
+}
+
+div.me a p {
+    margin: 0;
+}
+
+@media (max-width: 300px) {
+    div.me a p:last-of-type {
+        display: none;
+    }    
+}
+
+div.me a:hover {
+    color: rgb(46, 54, 160);
+    background-color: white;
+}
+
+@media (max-width: 1100px) { 
+    nav {
+        position: absolute;
+        top: 85px;
+        width: 100%;
+        display: flex;
+	margin-left: auto;
+	align-items: center;
+	justify-content: center;
+    }
+    
+    nav a {
+    margin-left: 5%;
+    width: auto;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight:bold;
+    text-align: center;
+    }
+}
+
+@media (min-width: 1100px) { 
+nav {
+	display: flex;
+	margin-left: auto;
+	align-items: center;
+}
+
+nav a {
+    width: 100px;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight:bold;
+}
+}
+nav a:hover {
+    color: rgb(46, 54, 160);
+    background-color: white;
+}

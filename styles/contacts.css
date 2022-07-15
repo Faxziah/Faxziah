@@ -1,0 +1,32 @@
+.photo {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+}
+
+div.photo h1:first-of-type {
+    margin-bottom: 5px;    
+}
+
+div.photo h1:last-of-type {
+    margin: 0;    
+}
+
+@media (max-width: 600px) {
+    .photo img {
+    width: 90%;
+    border-radius: 50%;
+    margin-top: 50px;
+    box-shadow: 0 0 5px black;
+    }
+}
+
+@media (min-width: 600px) {
+.photo img {
+	height: 450px;
+	border-radius: 50%;
+	margin-top: 50px;
+	box-shadow: 0 0 10px black;
+}
+}

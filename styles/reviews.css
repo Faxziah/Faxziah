@@ -1,0 +1,78 @@
+.reviews {
+	height: auto;
+}
+
+.reviews > div {
+	margin-top: 20px;
+}
+
+.reviews h1, .reviews h2 {
+	text-align: center;
+	margin-top: 50px;
+	font-size: 2em;
+	margin-left: 15px;
+}
+
+.reviews > div > div {
+	margin-top: 15px;
+}
+
+@media (max-width: 600px) {
+.reviews > div > div > div {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+}
+
+@media (min-width: 600px) {
+.reviews > div > div > div {
+	display: flex;
+}
+}
+
+.reviews > div > div > div > img {
+	border-radius: 200px;
+	width: 100px;
+	height: 100px;
+	margin: 10px 0 0 15px;
+}
+
+@media (max-width: 600px) {
+.reviews > div > div > div > img {
+	margin-bottom: 5px;
+}
+}
+.reviews > div > div > div > p {
+	margin: 10px 0 10px 15px;
+	line-height: 25px;
+	font-size: 1em;
+}
+
+.reviews > div:nth-of-type(2) > p {
+    text-align: center;
+    font-size: 1.5em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media (min-width: 600px) {
+.reviews > div:nth-of-type(2) > p > img {
+    width: 500px;
+    /* margin-left: 30px;
+    cursor: pointer;
+    transition: width 1.5s; */
+}
+}
+
+@media (max-width: 600px) {
+.reviews > div:nth-of-type(2) > p > img {
+    width: 350px;
+}
+}
+
+.reviews > div:nth-of-type(2) > p > a {
+    text-decoration: underline;   
+    color: revert;
+}

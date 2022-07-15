@@ -1,0 +1,60 @@
+.short_contacts  {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-top: 30px;
+}
+
+.short_contacts > div {
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+}
+
+.short_contacts div h3, .short_contacts div h2 {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+@media (max-width: 600px) {
+.short_contacts > div:last-of-type {
+    width: 100%;
+    height: 300px;
+    margin-top: 20px;
+}
+}
+
+@media (min-width: 600px) {
+.short_contacts > div:last-of-type {
+    width: 500px;
+    height: 400px;
+    margin-top: 20px;
+}
+}
+
+.short_contacts p {
+	margin: 10px 0;
+	line-height: 20px;
+	font-size: 1em;
+}
+
+.short_contacts a {
+    text-decoration: underline;   
+    color: revert;
+}
+
+.short_contacts > div > div > div {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.short_contacts > div > div > div > div {
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.short_contacts > div > div > a {
+    display: block;
+    margin-top: 15px;
+}
